@@ -40,12 +40,22 @@
         color: white;
         text-align: center;
     }
+    .row {
+        margin: auto!important;
+    }
+    .nav-link {
+        font-size: x-large;
+        color: #3983b9!important;
+    }
+    .bg-dark {
+        background-color: #e0e2e5!important
+    }
 </style>
 
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="index.html">Blog</a>
+        <a class="navbar-brand" href="index.html"><img src="img/android-chrome-192x192.png" style="height: 65px;"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -59,32 +69,33 @@
                 <li class="nav-item active">
                     <a class="nav-link" href="">About Us</a>
                 </li>
-                <!-- <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Tropic
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Development</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Reasult</a>
-                    </div>
-                </li> -->
                 <li class="nav-item">
                     <a class="nav-link" href="contact.html">Contact Us</a>
                 </li>
             </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
+
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">
+
+                        <svg style="font-size:large;" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" class="text-purple-700 dark:text-purple-300 cursor-pointer text-2xl absolute right-3 md:right-12 }" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M909.6 854.5L649.9 594.8C690.2 542.7 712 479 712 412c0-80.2-31.3-155.4-87.9-212.1-56.6-56.7-132-87.9-212.1-87.9s-155.5 31.3-212.1 87.9C143.2 256.5 112 331.8 112 412c0 80.1 31.3 155.5 87.9 212.1C256.5 680.8 331.8 712 412 712c67 0 130.6-21.8 182.7-62l259.7 259.6a8.2 8.2 0 0 0 11.6 0l43.6-43.5a8.2 8.2 0 0 0 0-11.6zM570.4 570.4C528 612.7 471.8 636 412 636s-116-23.3-158.4-65.6C211.3 528 188 471.8 188 412s23.3-116.1 65.6-158.4C296 211.3 352.2 188 412 188s116.1 23.2 158.4 65.6S636 352.2 636 412s-23.3 116.1-65.6 158.4z"></path></svg>
+                </button>
+              </form>
+
             <div class="mx-2">
-                <button class="btn btn-danger" data-toggle="modal" data-target="#signupModal">Signup</button>
-                <button class="btn btn-danger" data-toggle="modal" data-target="#loginModal">Login</button>
+                <button class="btn" data-toggle="modal" data-target="#signupModal" style="background-color: rgb(126 34 206); border-color: rgb(126 34 206); border-radius: 10px; color: white;">Signup</button>
+                <button class="btn" data-toggle="modal" data-target="#loginModal" style="background-color: rgb(126 34 206); border-color: rgb(126 34 206); border-radius: 10px; color: white;">Login</button>
             </div>
         </div>
     </nav>
+
+    <ul class="nav justify-content-center" style="background-color: #e2edf7;">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/about.html">About Us</a>
+        </li>
+      </ul>
+
+
 
     <!-- Login modal -->
     <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
@@ -164,22 +175,19 @@
     <div class="container marketing">
 
         <!-- Three columns of text below the carousel -->
-        <div class="row">
+        <div class="row ">
             <!-- START THE FEATURETTES -->
 
             <hr class="featurette-divider">
 
             <div class="row featurette">
                 <div class="col-md-7">
-                    <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your
-                            mind.</span></h2>
-                    <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis
-                        euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus,
-                        tellus ac cursus commodo.</p>
+                    <h2 class="featurette-heading">Leveraging on Technology for Strengthening Credit Flow for MSMES <span class="text-muted">It'll blow your mind.</span></h2>
+                    <p class="lead">Starting a new business venture may be overwhelming, especially for new entrepreneurs as regulatory compliances, filing of returns, interactions with several institutions etc., pose challenges for both aspiring and established entrepreneurs. Therefore, bringing synergy in the operations of various departments/institutions and facilitating flow of information can reduce the associated time and cost burdens for businesses, especially MSMEs. </p>
                 </div>
                 <div class="col-md-5">
                     <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="300"
-                        height="300" src="img/bram-naus-N1gUD_dCvJE-unsplash.jpg" alt="pic">
+                        height="300" src="img/Microsoft.webp" alt="pic">
 
                 </div>
             </div>
@@ -188,11 +196,9 @@
 
             <div class="row featurette">
                 <div class="col-md-7 order-md-2">
-                    <h2 class="featurette-heading">Oh yeah, it’s that good. <span class="text-muted">See for
+                    <h2 class="featurette-heading">What about the windows system <span class="text-muted">See for
                             yourself.</span></h2>
-                    <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis
-                        euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus,
-                        tellus ac cursus commodo.</p>
+                    <p class="lead">Windows is an operating system designed by Microsoft. The operating system is what allows you to use a computer. Windows comes preloaded on most new personal computers (PCs), which helps to make it the most popular operating system in the world.</p>
                 </div>
                 <div class="col-md-5 order-md-1">
                     <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="300"
@@ -204,10 +210,8 @@
 
             <div class="row featurette">
                 <div class="col-md-7">
-                    <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-                    <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis
-                        euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus,
-                        tellus ac cursus commodo.</p>
+                    <h2 class="featurette-heading">About the linux operating system</h2>
+                    <p class="lead">Linux is a free, open source operating system, released under the GNU General Public License (GPL). Anyone can run, study, modify, and redistribute the source code, or even sell copies of their modified code, as long as they do so under the same license</p>
                 </div>
                 <div class="col-md-5">
                     <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="300"
